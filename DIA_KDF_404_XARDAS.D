@@ -15,7 +15,7 @@ instance  Info_Xardas_ALTRUNE (C_INFO)
 FUNC int  Info_Xardas_ALTRUNE_Condition()
 {	
 	if	Npc_KnowsInfo(hero, Info_Xardas_FORMULA)
-	&&	 (Npc_GetTalentSkill	( hero,	NPC_TALENT_MAGE ) == 4)
+	&&	 (Npc_GetTalentSkill	( hero,	NPC_TALENT_MAGE ) > 3)
 	{			
 		return TRUE;
 	}; 
