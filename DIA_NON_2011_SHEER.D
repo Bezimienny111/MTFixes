@@ -3,15 +3,7 @@
 // 			  				   EXIT 
 // ************************************************************
 
-INSTANCE Info_Sheer_EXIT(C_INFO)
-{
-	npc			= Non_2011_Sheer;
-	nr			= 999;
-	condition			= Info_Sheer_EXIT_Condition;
-	information			= Info_Sheer_EXIT_Info;
-	permanent			= 1;
-	description 		= DIALOG_ENDE;
-};                       
+                   
 
 FUNC INT Info_Sheer_EXIT_Condition()
 {
@@ -35,16 +27,7 @@ FUNC VOID Info_Sheer_EXIT_Info()
 // 		Hello
 // ************************************************************
 
-INSTANCE Info_Sheer_Hello (C_INFO)
-{
-	npc			= Non_2011_Sheer;
-	nr			= 1;
-	condition		= Info_Sheer_Hello_Condition;
-	information		= Info_Sheer_Hello_Info;
-	important		= 0;
-	permanent		= 0;
-	description		= "Witaj wojowniku.";    
-};                       
+                      
 
 FUNC INT Info_Sheer_Hello_Condition()
 {	
@@ -93,15 +76,7 @@ FUNC VOID Info_Sheer_Hello_Info()
 
 // ***********************Know Seven steps*************************************
 
-INSTANCE Info_Sheer_Hello1 (C_INFO)
-{
-	npc			= Non_2011_Sheer;
-	condition		= Info_Sheer_Hello1_Condition;
-	information		= Info_Sheer_Hello1_Info;
-	important		= 0;
-	permanent		= 0;
-	description		= "Chcia³em zapytaæ o Drogê Siedmiu Kroków.";    
-};                       
+                     
 
 FUNC INT Info_Sheer_Hello1_Condition()
 {	
@@ -137,14 +112,6 @@ FUNC VOID Info_Sheer_Hello1_Info()
 
 //****After Fight********************************************************
 
-INSTANCE Info_Sheer_After (C_INFO)
-{
-	npc			= Non_2011_Sheer;
-	condition		= Info_Sheer_After_Condition;
-	information		= Info_Sheer_After_Info;
-	important		= 1;
-	permanent		= 0;   
-};                       
 
 FUNC INT Info_Sheer_After_Condition()
 {	
@@ -175,16 +142,7 @@ FUNC VOID Info_Sheer_After_Info()
 
 //****Traitor********************************************************
 
-INSTANCE Info_Sheer_Trait (C_INFO)
-{
-	npc			= Non_2011_Sheer;
-	condition		= Info_Sheer_Trait_Condition;
-	information		= Info_Sheer_Trait_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Jestem tu z polecenia Eli'Ne.";
-
-};                       
+                   
 
 FUNC INT Info_Sheer_Trait_Condition()
 {	
@@ -221,17 +179,7 @@ FUNC VOID Info_Sheer_Trait_Info()
 
 //****Master********************************************************
 
-INSTANCE Info_Sheer_Master (C_INFO)
-{
-	npc			= Non_2011_Sheer;
-	nr			= 3;
-	condition		= Info_Sheer_Master_Condition;
-	information		= Info_Sheer_Master_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Czy zostaniesz moim Mistrzem?";
-
-};                       
+                     
 
 FUNC INT Info_Sheer_Master_Condition()
 {	
@@ -297,17 +245,7 @@ FUNC VOID Info_Sheer_Master_No()
 
 //****Master again********************************************************
 
-INSTANCE Info_Sheer_Master1 (C_INFO)
-{
-	npc			= Non_2011_Sheer;
-	nr			= 33;
-	condition		= Info_Sheer_Master1_Condition;
-	information		= Info_Sheer_Master1_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Zdecydowa³em! B¹dŸ mym mistrzem.";
-
-};                       
+                     
 
 FUNC INT Info_Sheer_Master1_Condition()
 {	
@@ -346,17 +284,7 @@ FUNC VOID Info_Sheer_Master1_Info()
 
 //****Surface********************************************************
 
-INSTANCE Info_Sheer_Surf (C_INFO)
-{
-	npc			= Non_2011_Sheer;
-	nr			= 2;
-	condition		= Info_Sheer_Surf_Condition;
-	information		= Info_Sheer_Surf_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Podobno chcesz mi coœ powiedzieæ Mistrzu.";
-
-};                       
+                     
 
 FUNC INT Info_Sheer_Surf_Condition()
 {	
@@ -396,17 +324,7 @@ FUNC VOID Info_Sheer_Surf_Info()
 
 //****Cristal********************************************************
 ////////////////////////////////////////////////////////////Edit By Fenix////////////////////////////////////////////////////////////
-INSTANCE Info_Sheer_Cristal (C_INFO)
-{
-	npc			= Non_2011_Sheer;
-	nr			= 25;
-	condition		= Info_Sheer_Cristal_Condition;
-	information		= Info_Sheer_Cristal_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Zdoby³em Kryszta³ Zwyciêzców.";
-
-};                       
+                   
 
 FUNC INT Info_Sheer_Cristal_Condition()
 {	
@@ -436,16 +354,7 @@ FUNC VOID Info_Sheer_Cristal_Info()
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //**************************Ken fall***************************
 
-INSTANCE Info_Sheer_Fall (C_INFO)
-{
-	npc			= Non_2011_Sheer;
-	condition		= Info_Sheer_Fall_Condition;
-	information		= Info_Sheer_Fall_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Uriziel zaatakowa³ œwi¹tyniê!";
-
-};                       
+                       
 
 FUNC INT Info_Sheer_Fall_Condition()
 {	
@@ -551,16 +460,7 @@ var int Sheer_Limit_DEX;
 
 // ************Sheer teacher************************************************
 
-INSTANCE Info_Sheer_Teach(C_INFO)
-{
-	npc			= Non_2011_Sheer;
-	nr			= 100;
-	condition	= Info_Sheer_Teach_Condition;
-	information	= Info_Sheer_Teach_Info;
-	important		= 0;
-	permanent		= 1;
-	description = "Mo¿esz mnie czegoœ nauczyæ?";
-};                       
+                      
 
 FUNC INT Info_Sheer_Teach_Condition()
 {
@@ -690,16 +590,7 @@ func void Info_Sheer_Teach_DEX_5()
 //--------------2H fighting-----------------------------------------------------------
 
 
-instance  Sheer_2HMASTER (C_INFO)
-{
-	npc				= Non_2011_Sheer;
-	condition		= Sheer_2HMASTER_Condition;
-	information		= Sheer_2HMASTER_Info;
-	important		= 0;
-	permanent		= 1;
-	description		= "Nauka: Broñ dwurêczna (Guru), 30 PN"; 
-	nr				= 6;
-};
+
 
 FUNC int  Sheer_2HMASTER_Condition()
 {	
@@ -745,16 +636,7 @@ FUNC void  Sheer_2HMASTER_Info()
 		
 };
 
-instance  Sheer_ZWEIHAND1s (C_INFO)
-{
-	npc				= Non_2011_Sheer;
-	condition		= Sheer_ZWEIHAND1s_Condition;
-	information		= Sheer_ZWEIHAND1s_Info;
-	important		= 0;
-	permanent		= 0;
-	description		= "Naucz mnie walki dwurêcznym orê¿em."; 
-	nr				= 5;
-};
+
 
 FUNC int  Sheer_ZWEIHAND1s_Condition()
 {	
@@ -781,15 +663,6 @@ FUNC void  Sheer_ZWEIHAND1s_Info()
 
 
 
-instance  Sheer_ZWEIHAND1 (C_INFO)
-{
-	npc				= Non_2011_Sheer;
-	condition		= Sheer_ZWEIHAND1_Condition;
-	information		= Sheer_ZWEIHAND1_Info;
-	important		= 0;
-	permanent		= 1;
-	description		= "Walka dwurêcznym orê¿em."; 
-};
 
 FUNC int  Sheer_ZWEIHAND1_Condition()
 {	
@@ -856,15 +729,7 @@ func void Sheer_ZWEIHAND1_5()
 };
 
 
-instance  SHEER_TRAIN (C_INFO)
-{
-	npc				= Non_2011_Sheer;
-	condition		= SHEER_TRAIN_Condition;
-	information		= SHEER_TRAIN_Info;
-	important		= 0;
-	permanent		= 1;
-	description		= "Naucz mnie walki jednorêcznym orê¿em."; 
-};
+
 
 FUNC int  SHEER_TRAIN_Condition()
 {	
@@ -933,15 +798,7 @@ func void SHEER_TRAIN_5()
 
 
 
-INSTANCE Info_Sheer_Asking (C_INFO)
-{
-	npc			= Non_2011_Sheer;
-	condition		= Info_Sheer_Asking_Condition;
-	information		= Info_Sheer_Asking_Info;
-	important		= 1;
-	permanent		= 0;
-
-};                       
+                    
 
 FUNC INT Info_Sheer_Asking_Condition()
 {	
@@ -963,16 +820,7 @@ FUNC VOID Info_Sheer_Asking_Info()
 
 //**************************epilog***************************
 
-INSTANCE Info_Sheer_Epilog (C_INFO)
-{
-	npc			= Non_2011_Sheer;
-	condition		= Info_Sheer_Epilog_Condition;
-	information		= Info_Sheer_Epilog_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Ocali³em wasz¹ tajemnicê.";
-
-};                       
+                    
 
 FUNC INT Info_Sheer_Epilog_Condition()
 {	
@@ -1015,15 +863,7 @@ FUNC VOID Info_Sheer_Epilog_Info()
 	};
 };
 
-INSTANCE Info_Sheer_ENEMYF (C_INFO)
-{
-	npc			= Non_2011_Sheer;
-	condition		= Info_Sheer_ENEMYF_Condition;
-	information		= Info_Sheer_ENEMYF_Info;
-	important		= 1;
-	permanent		= 0;
-
-};                       
+                     
 
 FUNC INT Info_Sheer_ENEMYF_Condition()
 {	

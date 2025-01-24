@@ -4,15 +4,6 @@
 
 var int help1;
 
-INSTANCE Info_Quentin_EXIT(C_INFO)
-{
-	npc			= 		ORG_858_Quentin;
-	nr			= 999;
-	condition			= 		Info_Quentin_EXIT_Condition;
-	information			= 		Info_Quentin_EXIT_Info;
-	permanent			= 		1;
-	description 		= 		DIALOG_ENDE;
-};                       
 
 FUNC INT Info_Quentin_EXIT_Condition()
 {
@@ -31,16 +22,7 @@ var int quentin_none;
 
 // ************************Quentin hello************************************
 
-INSTANCE Info_Quentin_Hello (C_INFO)
-{
-	npc		= ORG_858_Quentin;
-	nr			= 1;
-	condition		= Info_Quentin_Hello_Condition;
-	information		= Info_Quentin_Hello_Info;
-	permanent		= 1;
-	important		= 0;
-	description = "£adny obozik.";
-};                       
+                     
 
 FUNC INT Info_Quentin_Hello_Condition()
 {	
@@ -119,16 +101,7 @@ FUNC VOID Info_Quentin_Hello_Info()
 
 // ************************Quentin hello************************************
 
-INSTANCE Info_Quentin_Attack (C_INFO)
-{
-	npc		= ORG_858_Quentin;
-	nr			= 2;
-	condition		= Info_Quentin_Attack_Condition;
-	information		= Info_Quentin_Attack_Info;
-	permanent		= 0;
-	important		= 0;
-	description = "Chyba mnie nie zrozumia³eœ!";
-};                       
+                
 
 FUNC INT Info_Quentin_Attack_Condition()
 {	
@@ -162,16 +135,7 @@ If (Npc_KnowsInfo (other, Info_Korth_Attack))&& (!Npc_KnowsInfo (other, Info_Kor
 
 // ************************Quentin KolRing************************************
 
-INSTANCE Info_Quentin_KolRing (C_INFO)
-{
-	npc		= ORG_858_Quentin;
-	nr			= 13;
-	condition		= Info_Quentin_KolRing_Condition;
-	information		= Info_Quentin_KolRing_Info;
-	permanent		= 0;
-	important		= 0;
-	description = "Szukam pewnego pierœcienia.";
-};                       
+                       
 
 FUNC INT Info_Quentin_KolRing_Condition()
 {	

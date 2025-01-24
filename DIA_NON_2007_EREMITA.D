@@ -2,14 +2,7 @@
 
 // *************Beware*******************
 
-instance DIA_Eremita_Final (C_INFO)
-{
-	npc			= Non_2007_Eremita;
-	condition	= DIA_Eremita_Final_Condition;
-	information	= DIA_Eremita_Final_Info;
-	important 	= 1;
-	permanent	= 0;
-};                       
+                    
 
 FUNC int DIA_Eremita_Final_Condition()
 {	

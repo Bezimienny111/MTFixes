@@ -1,16 +1,4 @@
 
-//---------------------------------------------------------------------
-//	Info ALTRUNE 
-//---------------------------------------------------------------------
-instance  Info_Xardas_ALTRUNE (C_INFO)
-{
-	npc				= Kdf_404_Xardas;
-	condition		= Info_Xardas_ALTRUNE_Condition;
-	information		= Info_Xardas_ALTRUNE_Info;
-	important		= 0;
-	permanent		= 0;
-	description		= "Jestem magiem. Nie wiem, czy potrafiê pos³ugiwaæ siê mieczem takim jak URIZIEL!";
-};
 
 FUNC int  Info_Xardas_ALTRUNE_Condition()
 {	
@@ -31,24 +19,8 @@ FUNC void  Info_Xardas_ALTRUNE_Info()
 //---------------------------------------------------------------------
 //	Info MAKERUNEDOIT
 //---------------------------------------------------------------------
-instance  Info_Xardas_MAKERUNEDOIT (C_INFO)
-{
-	npc				= Kdf_404_Xardas;
-	condition		= Info_Xardas_MAKERUNEDOIT_Condition;
-	information		= Info_Xardas_MAKERUNEDOIT_Info;
-	important		= 0;
-	permanent		= 1;
-	description		= "Chcê, ¿ebyœ usun¹³ klejnot z URIZIEL!"; 
-};
 
-FUNC int  Info_Xardas_MAKERUNEDOIT_Condition()
-{	
-	if	Npc_KnowsInfo(hero, Info_Xardas_MAKERUNE)
-	&&	Npc_HasItems (hero,	Mythrilklinge02)
-	{			
-		return TRUE;	
-	}; 
-};
+
 
 FUNC void  Info_Xardas_MAKERUNEDOIT_Info()
 {
@@ -90,15 +62,6 @@ func void Info_Xardas_MAKERUNE_NO ()
 //---------------------------------------------------------------------
 //	Info LOADSWORD9 --> SC kann DMB werden
 //---------------------------------------------------------------------
-instance  Info_Xardas_LOADSWORD09 (C_INFO)
-{
-	npc				= Kdf_404_Xardas;
-	condition		= Info_Xardas_LOADSWORD09_Condition;
-	information		= Info_Xardas_LOADSWORD09_Info;
-	important		= 0;
-	permanent		= 1;
-	description		= B_BuildLearnString(NAME_LearnMage_6, LPCOST_TALENT_MAGE_6,0); 
-};
 
 FUNC int  Info_Xardas_LOADSWORD09_Condition()
 {	
