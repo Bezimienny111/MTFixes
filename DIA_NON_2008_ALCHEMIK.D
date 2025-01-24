@@ -4,16 +4,7 @@ var int ChelpForAlchemik;
 // ************************************************************
 // 			  				   EXIT 
 // ************************************************************
-
-INSTANCE Info_Alch_EXIT(C_INFO)
-{
-	npc		= Non_2008_Alchemik;
-	nr			= 999;
-	condition		= Info_Alch_EXIT_Condition;
-	information		= Info_Alch_EXIT_Info;
-	permanent		= 1;
-	description 	= DIALOG_ENDE;
-};                       
+                  
 
 FUNC INT Info_Alch_EXIT_Condition()
 {
@@ -29,17 +20,7 @@ FUNC VOID Info_Alch_EXIT_Info()
 // ************************************************************
 // 		Alch hello
 // ************************************************************
-
-INSTANCE Info_Alch_Hello (C_INFO)
-{
-	npc		= Non_2008_Alchemik;
-	nr		= 1;
-	condition		= Info_Alch_Hello_Condition;
-	information	= Info_Alch_Hello_Info;
-	important		= 0;
-	permanent	= 0;
-	description 	= "Kim jesteœ?";
-};                       
+                    
 
 FUNC INT Info_Alch_Hello_Condition()
 {	
@@ -68,17 +49,7 @@ FUNC VOID Info_Alch_Hello_Info()
 };
 
 // ****************herbs********************************************
-
-INSTANCE Info_Alch_Herbs (C_INFO)
-{
-	npc		= Non_2008_Alchemik;
-	nr		= 2;
-	condition		= Info_Alch_Herbs_Condition;
-	information	= Info_Alch_Herbs_Info;
-	important		= 0;
-	permanent	= 0;
-	description 	= "Mam zio³a.";
-};                       
+                   
 
 FUNC INT Info_Alch_Herbs_Condition()
 {	
@@ -139,17 +110,6 @@ FUNC VOID Info_Alch_Herbs_Info()
 
 // ****************herbs********************************************
 
-INSTANCE Info_Alch_Deliver (C_INFO)
-{
-	npc		= Non_2008_Alchemik;
-	nr		= 3;
-	condition		= Info_Alch_Deliver_Condition;
-	information	= Info_Alch_Deliver_Info;
-	important		= 0;
-	permanent	= 0;
-	description 	= "Mam te roœliny.";
-};                       
-
 FUNC INT Info_Alch_Deliver_Condition()
 {	
 	if (Npc_KnowsInfo (other, Info_Alch_Herbs))&&(NPC_HasItems(other,ItFo_Plants_Seraphis_01)>=8)&&(NPC_HasItems(other,ItFo_Plants_Nightshadow_01)>=1)
@@ -180,17 +140,7 @@ FUNC VOID Info_Alch_Deliver_Info()
 
 
 // ****************herbs buy********************************************
-
-INSTANCE Info_Alch_Buy (C_INFO)
-{
-	npc		= Non_2008_Alchemik;
-	nr		= 4;
-	condition		= Info_Alch_Buy_Condition;
-	information	= Info_Alch_Buy_Info;
-	important		= 0;
-	permanent	= 1;
-	description 	= "Mam roœliny na sprzeda¿.";
-};                       
+                     
 
 FUNC INT Info_Alch_Buy_Condition()
 {	
@@ -325,17 +275,7 @@ FUNC VOID Info_Alch_Buy_Info()
 
 
 // ****************mixtures********************************************
-
-INSTANCE Info_Alch_Mix (C_INFO)
-{
-	npc		= Non_2008_Alchemik;
-	nr		= 5;
-	condition		= Info_Alch_Mix_Condition;
-	information	= Info_Alch_Mix_Info;
-	important		= 0;
-	permanent	= 1;
-	description 	= "Uwarzysz dla mnie miksturê?";
-};                       
+                   
 
 FUNC INT Info_Alch_Mix_Condition()
 {	
@@ -943,17 +883,7 @@ FUNC VOID Info_Alch_Mix_g2 ()
 
 
 // **************Ask**********************************************
-
-INSTANCE Info_Alch_Ask (C_INFO)
-{
-	npc		= Non_2008_Alchemik;
-	nr		= 5;
-	condition		= Info_Alch_Ask_Condition;
-	information	= Info_Alch_Ask_Info;
-	important		= 0;
-	permanent	= 0;
-	description 	= "Wygl¹dasz na zafrasowanego...";
-};                       
+                       
 
 FUNC INT Info_Alch_Ask_Condition()
 {	
@@ -987,17 +917,7 @@ FUNC VOID Info_Alch_Ask_Info()
 
 
 // **************Seeds**********************************************
-
-INSTANCE Info_Alch_Seeds (C_INFO)
-{
-	npc		= Non_2008_Alchemik;
-	nr		= 6;
-	condition		= Info_Alch_Seeds_Condition;
-	information	= Info_Alch_Seeds_Info;
-	important		= 0;
-	permanent	= 0;
-	description 	= "Znalaz³em nasiona.";
-};                       
+                     
 
 FUNC INT Info_Alch_Seeds_Condition()
 {	
@@ -1078,17 +998,7 @@ FUNC VOID Info_Alch_Seeds_Dex()
 //DragonBlood_Mixture
 
 // **************Dragon blood**********************************************
-
-INSTANCE Info_Alch_Blood (C_INFO)
-{
-	npc		= Non_2008_Alchemik;
-	nr		= 7;
-	condition		= Info_Alch_Blood_Condition;
-	information	= Info_Alch_Blood_Info;
-	important		= 0;
-	permanent	= 0;
-	description 	= "Widzia³eœ kiedyœ coœ takiego?";
-};                       
+                   
 
 FUNC INT Info_Alch_Blood_Condition()
 {	
@@ -1127,17 +1037,7 @@ FUNC VOID Info_Alch_Blood_Info()
 // **************perls**********************************************
 
 var int blood_wait;
-
-INSTANCE Info_Alch_Blood1 (C_INFO)
-{
-	npc		= Non_2008_Alchemik;
-	nr		= 8;
-	condition		= Info_Alch_Blood1_Condition;
-	information	= Info_Alch_Blood1_Info;
-	important		= 0;
-	permanent	= 0;
-	description 	= "Znalaz³em per³y.";
-};                       
+                    
 
 FUNC INT Info_Alch_Blood1_Condition()
 {	
@@ -1166,15 +1066,6 @@ FUNC VOID Info_Alch_Blood1_Info()
 // **************blood mixtures**********************************************
 
 
-
-INSTANCE Info_Alch_Blood2 (C_INFO)
-{
-	npc		= Non_2008_Alchemik;
-	condition		= Info_Alch_Blood2_Condition;
-	information	= Info_Alch_Blood2_Info;
-	important		= 1;
-	permanent	= 0;
-};                       
 
 FUNC INT Info_Alch_Blood2_Condition()
 {
@@ -1217,17 +1108,7 @@ FUNC VOID Info_Alch_Blood2_Info()
 
 
 //****************************JAIL********************
-
-INSTANCE Info_Alch_Jail (C_INFO)
-{
-	npc		= Non_2008_Alchemik;
-	nr		= 18;
-	condition		= Info_Alch_Jail_Condition;
-	information	= Info_Alch_Jail_Info;
-	important		= 0;
-	permanent	= 0;
-	description 	= "No proszê, kogo to znalaz³em!";
-};                       
+                  
 
 FUNC INT Info_Alch_Jail_Condition()
 {	
@@ -1279,15 +1160,7 @@ FUNC VOID Info_Alch_Jail_Info()
 };
 
 //*************Thx*******************
-
-INSTANCE Info_Alch_Gift (C_INFO)
-{
-	npc		= Non_2008_Alchemik;
-	condition		= Info_Alch_Gift_Condition;
-	information	= Info_Alch_Gift_Info;
-	important		= 1;
-	permanent	= 0;
-};                       
+                     
 
 FUNC INT Info_Alch_Gift_Condition()
 {	
@@ -1344,17 +1217,7 @@ FUNC VOID Info_Alch_Gift_Info()
 // ************************************************************
 // 		Leki ;]
 // ************************************************************
-
-INSTANCE Info_Alch_Lek (C_INFO)
-{
-	npc		= Non_2008_Alchemik;
-	nr		= 1;
-	condition		= Info_Alch_Lek_Condition;
-	information	= Info_Alch_Lek_Info;
-	important		= 0;
-	permanent	= 0;
-	description 	= "Przysy³a mnie Dorm.";
-};                       
+                     
 
 FUNC INT Info_Alch_Lek_Condition()
 
@@ -1389,17 +1252,7 @@ FUNC VOID Info_Alch_Lek_Info()
 
 //////////////////////////////////////////////////////////// 
 //////////////             co 
-/////////////////////////////////////////////////////// 
-instance Info_Alch_Lek_kup   (C_INFO) 
-{ 
-   npc     = Non_2008_Alchemik; 
-   nr          =654; 
-   condition   =   Info_Alch_Lek_kup_condition; 
-   information     = Info_Alch_Lek_kup_info; 
-   important     =  FALSE; 
-   permanent     = FALSE; 
-   Description    = "Oto 60 bry³ek rudy.";
-}; 
+///////////////////////////////////////////////////////  
  
 func int Info_Alch_Lek_kup_condition () 
 { 

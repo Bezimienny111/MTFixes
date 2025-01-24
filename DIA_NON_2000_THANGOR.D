@@ -3,16 +3,7 @@
 // 			  				   EXIT 
 // ************************************************************
 var int dead;
-
-INSTANCE Info_Thangor_EXIT(C_INFO)
-{
-	npc			= Non_2000_Thangor;
-	nr			= 999;
-	condition			= Info_Thangor_EXIT_Condition;
-	information			= Info_Thangor_EXIT_Info;
-	permanent			= 1;
-	description 		= DIALOG_ENDE;
-};                       
+                  
 
 FUNC INT Info_Thangor_EXIT_Condition()
 {
@@ -30,16 +21,7 @@ var int Tha_hi;
 // 		Boss
 // ************************************************************
 ////////////Edit By Fenix
-INSTANCE Info_Thangor_Hello (C_INFO)
-{
-	npc		= Non_2000_Thangor;
-	nr			= 1;
-	condition		= Info_Thangor_Hello_Condition;
-	information		= Info_Thangor_Hello_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Witaj...";
-};                       
+                     
 
 FUNC INT Info_Thangor_Hello_Condition()
 {	
@@ -86,16 +68,7 @@ Info_Thangor_Hello.permanent = 0;
 
 };
 
-INSTANCE Info_Thangor_MyHello (C_INFO)
-{
-	npc		= Non_2000_Thangor;
-	nr			= 1;
-	condition		= Info_Thangor_MyHello_Condition;
-	information		= Info_Thangor_MyHello_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "To znowu ja.";
-};                       
+                  
 
 FUNC INT Info_Thangor_MyHello_Condition()
 {	
@@ -128,16 +101,7 @@ FUNC VOID Info_Thangor_MyHello_Info()
 
 //**********Atak**************************************************
 
-INSTANCE Info_Thangor_Attack (C_INFO)
-{
-	npc			= Non_2000_Thangor;
-	nr			= 2;
-	condition		= Info_Thangor_Attack_Condition;
-	information		= Info_Thangor_Attack_Info;
-	important		= 0;
-	permanent		= 0;
-	description 		= "Mo¿e Ÿle mnie zrozumia³eœ...";
-};                       
+                 
 
 FUNC INT Info_Thangor_Attack_Condition()
 {	
@@ -166,15 +130,7 @@ FUNC VOID Info_Thangor_Attack_Info()
 
 //**********Proof**************************************************
 
-INSTANCE Info_Thangor_Proof (C_INFO)
-{
-	npc			= Non_2000_Thangor;
-	nr			= 1;
-	condition		= Info_Thangor_Proof_Condition;
-	information		= Info_Thangor_Proof_Info;
-	important		= 1;
-	permanent		= 0;
-};                       
+                      
 
 FUNC INT Info_Thangor_Proof_Condition()
 {	
@@ -217,16 +173,7 @@ FUNC VOID Info_Thangor_Proof_Info()
 
 //**********Deliver**************************************************
 
-INSTANCE Info_Thangor_Deliver (C_INFO)
-{
-	npc			= Non_2000_Thangor;
-	nr			= 5;
-	condition		= Info_Thangor_Deliver_Condition;
-	information		= Info_Thangor_Deliver_Info;
-	important		= 0;
-	permanent		= 1;
-	description 		= "Mam ju¿ chyba wszystko.";
-};                       
+                     
 
 FUNC INT Info_Thangor_Deliver_Condition()
 {	
@@ -268,16 +215,7 @@ Info_Thangor_Deliver.permanent = 1;
 
 //**********Problem**************************************************
 
-INSTANCE Info_Thangor_Problem (C_INFO)
-{
-	npc			= Non_2000_Thangor;
-	nr			= 1;
-	condition		= Info_Thangor_Problem_Condition;
-	information		= Info_Thangor_Problem_Info;
-	important		= 0;
-	permanent		= 0;
-	description 		= "Co do tej przesy³ki...";
-};                       
+                      
 
 FUNC INT Info_Thangor_Problem_Condition()
 {	
@@ -360,17 +298,7 @@ FUNC VOID Info_Thangor_Problem_Info()
 
 ////////////////////////////////////////////////////////////Edit By Fenix////////////////////////////////////////////////////////////
 //**********Dostawa Final**************************************************
-
-INSTANCE Info_Thangor_Final (C_INFO)
-{
-	npc			= Non_2000_Thangor;
-	nr			= 1;
-	condition		= Info_Thangor_Final_Condition;
-	information		= Info_Thangor_Final_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Mam przesy³kê.";
-};                       
+                    
 
 FUNC INT Info_Thangor_Final_Condition()
 {	
@@ -442,17 +370,7 @@ FUNC VOID Info_Thangor_Final_Info()
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //**********Dostawa Failed**************************************************
-
-INSTANCE Info_Thangor_Failed (C_INFO)
-{
-	npc			= Non_2000_Thangor;
-	nr			= 1;
-	condition		= Info_Thangor_Failed_Condition;
-	information		= Info_Thangor_Failed_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Co do dostawy...";
-};                       
+                    
 
 FUNC INT Info_Thangor_Failed_Condition()
 {	
@@ -485,16 +403,7 @@ FUNC VOID Info_Thangor_Failed_Info()
 var int Thangor_Merke_STR;
 var int Thangor_Merke_DEX;
 // ************Thangor teacher************************************************
-
-INSTANCE Info_Thangor_Teach(C_INFO)
-{
-	npc			= Non_2000_Thangor;
-	nr			= 100;
-	condition	= Info_Thangor_Teach_Condition;
-	information	= Info_Thangor_Teach_Info;
-	permanent	= 1;
-	description = "Mo¿esz mnie czegoœ nauczyæ?";
-};                       
+                       
 
 FUNC INT Info_Thangor_Teach_Condition()
 {
@@ -585,17 +494,7 @@ func void Info_Thangor_Teach_DEX_5()
 
 
 //*****************Focus*******************
-
-INSTANCE Info_Thangor_Focus (C_INFO)
-{
-	npc			= Non_2000_Thangor;
-	nr			= 11;
-	condition		= Info_Thangor_Focus_Condition;
-	information		= Info_Thangor_Focus_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Mam do ciebie pytanie.";
-};                       
+                       
 
 FUNC INT Info_Thangor_Focus_Condition()
 {	
@@ -635,17 +534,7 @@ FUNC VOID Info_Thangor_Focus_Info()
 };
 
 //*********Sekstans**************************************************
-
-INSTANCE Info_Thangor_Seks (C_INFO)
-{
-	npc			= Non_2000_Thangor;
-	nr			= 10;
-	condition		= Info_Thangor_Seks_Condition;
-	information		= Info_Thangor_Seks_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Odzyska³em sekstans.";
-};                       
+                      
 
 FUNC INT Info_Thangor_Seks_Condition() 
 {	
@@ -670,17 +559,7 @@ FUNC VOID Info_Thangor_Seks_Info()
 };
 
 //*********Chromanin**************************************************
-
-INSTANCE Info_Thangor_Book (C_INFO)
-{
-	npc			= Non_2000_Thangor;
-	nr			= 7;
-	condition		= Info_Thangor_Book_Condition;
-	information		= Info_Thangor_Book_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Szukam pewnej ksiêgi.";
-};                       
+                     
 
 FUNC INT Info_Thangor_Book_Condition() 
 {	
@@ -708,17 +587,7 @@ FUNC VOID Info_Thangor_Book_Info()
 };
 
 
-
-INSTANCE Info_Thangor_OreInv (C_INFO)
-{
-	npc			= Non_2000_Thangor;
-	nr			= 11;
-	condition		= Info_Thangor_OreInv_Condition;
-	information		= Info_Thangor_OreInv_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Chcia³em pogadaæ o przemycie rudy.";
-};                       
+                      
 
 FUNC INT Info_Thangor_OreInv_Condition()
 {	
@@ -762,17 +631,7 @@ FUNC VOID Info_Thangor_OreInv_Info()
 	B_LogEntry		(P_Missing, "Rozmawia³em z Thangorem o przemycie rudy. Doradzi³ mi ¿ebym pozby³ siê osoby stoj¹cej za przemytem rudy w obozie przed kopalni¹. Teraz muszê tylko znaleŸæ tê osobê.");
 	B_GiveXP(XP*3);
 };
-
-INSTANCE Info_Thangor_OreInv1 (C_INFO)
-{
-	npc			= Non_2000_Thangor;
-	nr			= 18;
-	condition		= Info_Thangor_OreInv1_Condition;
-	information		= Info_Thangor_OreInv1_Info;
-	important		= 0;
-	permanent		= 0;
-	description 	= "Za³atwi³em Melkora.";
-};                       
+                      
 
 FUNC INT Info_Thangor_OreInv1_Condition()
 {	
@@ -794,15 +653,7 @@ FUNC VOID Info_Thangor_OreInv1_Info()
 	B_LogEntry		(P_Missing, "Kiedy powiedzia³em Thangorowi, ¿e Melkor nie ¿yje, ten uraczy³ mnie jak¹œ filozoficzn¹ gadk¹. Móg³ powiedzieæ wprost, ¿e teraz bez przeszkód mog¹ skupowaæ rudê. tak czy inaczej, wszyscy na tym dobrze wyszli.");
 };
 
-INSTANCE Info_Thangor_Attack22 (C_INFO)
-{
-	npc			= Non_2000_Thangor;
-	nr			= 22;
-	condition		= Info_Thangor_Attack22_Condition;
-	information		= Info_Thangor_Attack22_Info;
-	important		= 1;
-	permanent		= 0;
-};                       
+                  
 
 FUNC INT Info_Thangor_Attack22_Condition()
 {	

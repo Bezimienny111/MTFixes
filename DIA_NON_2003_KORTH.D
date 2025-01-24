@@ -3,16 +3,7 @@
 // ************************************************************
 var int ore;
 var int kor_agree;
-
-INSTANCE Info_Korth_EXIT(C_INFO)
-{
-	npc			= Non_2003_Korth;
-	nr			= 999;
-	condition	= Info_Korth_EXIT_Condition;
-	information	= Info_Korth_EXIT_Info;
-	permanent	= 1;
-	description = DIALOG_ENDE;
-};                       
+                     
 
 FUNC INT Info_Korth_EXIT_Condition()
 {
@@ -27,16 +18,7 @@ FUNC VOID Info_Korth_EXIT_Info()
 // ************************************************************
 // 		Stra¿nik Obozu
 // ************************************************************
-
-INSTANCE Info_Korth_EnterCamp(C_INFO)
-{
-	npc		= Non_2003_Korth;
-	nr			= 1;
-	condition	= Info_Korth_EnterCamp_Condition;
-	information	= Info_Korth_EnterCamp_Info;
-	important	= 1;
-	permanent	= 0;
-};                       
+                    
 
 FUNC INT Info_Korth_EnterCamp_Condition()
 {	
@@ -149,16 +131,7 @@ var int Korth_ring_find;
 
 // *********************************KorthHelp***********************
 
-INSTANCE Info_Korth_Help (C_INFO)
-{
-	npc		= Non_2003_Korth;
-	nr			= 1;
-	condition		= Info_Korth_Help_Condition;
-	information		= Info_Korth_Help_Info;
-	important		= 0;
-	permanent		= 0;
-	description = "Nie chcia³bym siê narzucaæ, ale...";
-};                       
+                 
 
 FUNC INT  Info_Korth_Help_Condition()
 {	
@@ -276,17 +249,7 @@ FUNC VOID Info_Korth_Help_Info()
 			};
 
 // *********************************FindOreHunters***********************
-
-INSTANCE Info_Korth_FindBoys (C_INFO)
-{
-	npc		= Non_2003_Korth;
-	nr			= 5;
-	condition		= Info_Korth_FindBoys_Condition;
-	information		= Info_Korth_FindBoys_Info;
-	important		= 0;
-	permanent		= 0;
-	description = "Mam dobr¹ wiadomoœæ.";
-};                       
+                   
 
 FUNC INT  Info_Korth_FindBoys_Condition()
 {	
@@ -382,17 +345,7 @@ FUNC VOID Info_Korth_FindBoys_Info()
 	};	
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // *********************************FindRing***********************
-
-INSTANCE Info_Korth_FindRing (C_INFO)
-{
-	npc		= Non_2003_Korth;
-	nr			= 3;
-	condition		= Info_Korth_FindRing_Condition;
-	information		= Info_Korth_FindRing_Info;
-	important		= 0;
-	permanent		= 0;
-	description = "By³em w tej cholernej jaskini.";
-};                       
+                     
 
 FUNC INT  Info_Korth_FindRing_Condition()
 {	
@@ -425,17 +378,7 @@ FUNC VOID Info_Korth_FindRing_Info()
 };
 //////////////////////////Edit By Fenix////////////////////////////////////////////////////////////////////////////////////////////////////////
 // *********************************FindRingAlso***********************
-
-INSTANCE Info_Korth_FindRingAlso (C_INFO)
-{
-	npc		= Non_2003_Korth;
-	nr			= 3;
-	condition		= Info_Korth_FindRingAlso_Condition;
-	information		= Info_Korth_FindRingAlso_Info;
-	important		= 0;
-	permanent		= 0;
-	description = "Czy to nie nale¿y do ciebie?";
-};                       
+                     
 
 FUNC INT  Info_Korth_FindRingAlso_Condition()
 {	
@@ -470,17 +413,7 @@ FUNC VOID Info_Korth_FindRingAlso_Info()
 };
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // *********************************ImproveStrength***********************
-
-INSTANCE Info_Korth_Improve (C_INFO)
-{
-	npc		= Non_2003_Korth;
-	nr			= 20;
-	condition		= Info_Korth_Improve_Condition;
-	information		= Info_Korth_Improve_Info;
-	important		= 0;
-	permanent		= 0;
-	description = "I co z tymi æwiczeniami?";
-};                       
+                      
 
 FUNC INT  Info_Korth_Improve_Condition()
 {	
@@ -501,18 +434,7 @@ FUNC VOID Info_Korth_Improve_Info()
 	AI_Output (self, other,"Info_Korth_Improve_11_05"); //Dobra ju¿ dobra. Przestañ smêciæ bo siê rozp³aczê. Powodzenia na szlaku, przyjacielu.
 };
 
-// *********************************ThangorProoff***********************
-
-INSTANCE Info_Korth_Pack (C_INFO)
-{
-	npc		= Non_2003_Korth;
-	nr			= 4;
-	condition		= Info_Korth_Pack_Condition;
-	information		= Info_Korth_Pack_Info;
-	important		= 0;
-	permanent		= 0;
-	description = "Przysy³a mnie Thangor.";
-};                       
+// *********************************ThangorProoff***********************                     
 
 FUNC INT  Info_Korth_Pack_Condition()
 {	
@@ -541,17 +463,7 @@ FUNC VOID Info_Korth_Pack_Info()
 };
 
 // *********************************Attack***********************
-
-INSTANCE Info_Korth_Attack (C_INFO)
-{
-	npc		= Non_2003_Korth;
-	nr			= 2;
-	condition		= Info_Korth_Attack_Condition;
-	information		= Info_Korth_Attack_Info;
-	important		= 0;
-	permanent		= 0;
-	description = "Mam do ciebie ma³¹ proœbê.";
-};                       
+                 
 
 FUNC INT  Info_Korth_Attack_Condition()
 {	
@@ -580,15 +492,7 @@ FUNC VOID Info_Korth_Attack_Info()
 };
 
 // *********************************Back***********************
-
-INSTANCE Info_Korth_Back (C_INFO)
-{
-	npc		= Non_2003_Korth;
-	condition		= Info_Korth_Back_Condition;
-	information		= Info_Korth_Back_Info;
-	important		= 1;
-	permanent		= 0;
-};                       
+                     
 
 FUNC INT  Info_Korth_Back_Condition()
 {	
@@ -620,15 +524,7 @@ FUNC VOID Info_Korth_Back_Info()
 
 
 // *********************************ToLate***********************
-
-INSTANCE Info_Korth_Late (C_INFO)
-{
-	npc		= Non_2003_Korth;
-	condition		= Info_Korth_Late_Condition;
-	information		= Info_Korth_Late_Info;
-	important		= 1;
-	permanent		= 0;
-};                       
+                      
 
 FUNC INT  Info_Korth_Late_Condition()
 {	
@@ -652,15 +548,7 @@ FUNC VOID Info_Korth_Late_Info()
 };
 
 // *********************************Monk Clue***********************
-
-INSTANCE Info_Korth_Monk (C_INFO)
-{
-	npc		= Non_2003_Korth;
-	condition		= Info_Korth_Monk_Condition;
-	information		= Info_Korth_Monk_Info;
-	important		= 1;
-	permanent		= 0;
-};                       
+                      
 
 FUNC INT  Info_Korth_Monk_Condition()
 {	
@@ -692,15 +580,6 @@ FUNC VOID Info_Korth_Monk_Info()
 //--------------2H fighting-----------------------------------------------------------
 
 
-instance  Korth_ZWEIHAND1s (C_INFO)
-{
-	npc				= Non_2003_Korth;
-	condition		= Korth_ZWEIHAND1s_Condition;
-	information		= Korth_ZWEIHAND1s_Info;
-	important		= 0;
-	permanent		= 0;
-	description		= "Naucz mnie walki dwurêcznym orê¿em."; 
-};
 
 FUNC int  Korth_ZWEIHAND1s_Condition()
 {		//Edit By Fenix
@@ -727,15 +606,6 @@ FUNC void  Korth_ZWEIHAND1s_Info()
 
 
 
-instance  Korth_ZWEIHAND1 (C_INFO)
-{
-	npc				= Non_2003_Korth;
-	condition		= Korth_ZWEIHAND1_Condition;
-	information		= Korth_ZWEIHAND1_Info;
-	important		= 0;
-	permanent		= 1;
-	description		= "Walka dwurêcznym orê¿em."; 
-};
 
 FUNC int  Korth_ZWEIHAND1_Condition()
 {		//Edit By Fenix
